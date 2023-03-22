@@ -159,5 +159,5 @@ Nested:
 
 #  Data rich documents 
 
-<Table src="data.csv" />
+<Table url="data.csv" />
 

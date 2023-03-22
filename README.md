@@ -157,4 +157,7 @@ Nested:
 [[test/test]]
 
 
+#  Data rich documents 
+
+<Table src="data.csv" />
 

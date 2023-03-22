@@ -157,12 +157,3 @@ Nested:
 [[test/test]]
 
 
-#  Data rich documents 
-
-<Table url="data.csv" />
-
-#  Line Chart from URL with Tooltip
-
-https://vega.github.io/vega-lite/examples/interactive_multi_line_pivot_tooltip.html
-
-<VegaLite spec={ { "$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"url": "HadCRUT.5.0.1.0.analysis.summary_series.global.annual.csv"}, "width": 600, "height": 250, "mark": "line", "encoding": { "x": {"field": "Time", "type": "temporal"}, "y": {"field": "Anomaly (deg C)", "type": "quantitative"}, "tooltip": {"field": "Anomaly (deg C)", "type": "quantitative"} } } } />

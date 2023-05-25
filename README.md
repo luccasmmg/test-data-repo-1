@@ -71,10 +71,34 @@ This is the README.md this project.
  
 ## LineChart from URL 
 
-
-<LineChart
-  data="https://raw.githubusercontent.com/datasets/oil-prices/main/data/wti-year.csv"
-  title="Oil Price x Year"
-  xAxis="Date"
-  yAxis="Price"
+<Vega
+  data={{
+    table: [
+      {
+        x: 1850,
+        y: -0.418
+      },
+      {
+        x: 2020,
+        y: 0.923
+      }
+    ]
+  }}
+  spec={{
+    $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+    data: {
+      name: 'table'
+    },
+    encoding: {
+      x: {
+        field: 'x',
+        type: 'ordinal'
+      },
+      y: {
+        field: 'y',
+        type: 'quantitative'
+      }
+    },
+    mark: 'bar'
+  }}
 />

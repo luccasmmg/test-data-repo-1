@@ -69,6 +69,12 @@ This is the README.md this project.
   ]}
 />
  
-## Vega Lite Line Chart from URL 
+## LineChart from URL 
 
-<VegaLite spec={ { "$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"url": "[data_2.csv](https://raw.githubusercontent.com/luccasmmg/test-data-repo-1/main/data_2.csv)"}, "width": 600, "height": 250, "mark": "line", "encoding": { "x": {"field": "Time", "type": "temporal"}, "y": {"field": "Anomaly (deg C)", "type": "quantitative"}, "tooltip": {"field": "Anomaly (deg C)", "type": "quantitative"} } } } />
+
+<LineChart
+  data="https://raw.githubusercontent.com/datasets/oil-prices/main/data/wti-year.csv"
+  title="Oil Price x Year"
+  xAxis="Date"
+  yAxis="Price"
+/>

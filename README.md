@@ -12,7 +12,7 @@ This is the README.md this project.
   data={{
     table: [
       {
-        x: 1850,
+        x: 1890,
         y: -0.418
       },
       {
